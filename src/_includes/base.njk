@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ metadata.title }} – {{ metadata.description }}</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img
+          src="/assets/img/megaphone.svg"
+          alt="Open Podcasting Course"
+          class="profile-photo"
+          width="50"
+          height="50"
+        />
+        <div>
+          <a class="site-title-link" href="{{ metadata.url }}"
+            ><h1 class="site-title">{{ metadata.title }}</h1></a
+          >
+          <p class="site-description">{{ metadata.description }}</p>
+        </div>
+      </div>
+    </header>
+    
+    <div class="line"></div>
+    
+    <main>{{ content | safe }}</main>
+
+    <footer class="footer">
+      <div class="home-link">
+        <nav class="navigation-container">
+          <ul class="navigation">
+            {% for item in collections.all | eleventyNavigation %}
+              <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="icon-links icon-margin">
+        <a href="https://github.com/yeldarx/opc" title="GitHub"><img src="/assets/img/github.svg" alt="GitHub" /></a>
+        <a href="/feed.xml" title="RSS Feed"><img src="/assets/img/rss.svg" alt="RSS Feed" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
