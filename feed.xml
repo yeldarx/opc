@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://podcasting.center/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Podcasting Course</title>
+    <link>https://podcasting.center/</link>
+    <atom:link href="https://podcasting.center/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Open Podcasting Course blog</description>
+    <language>en</language>
+  </channel>
+</rss>

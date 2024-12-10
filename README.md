@@ -1,2 +1,0 @@
-# opc
-Open Podcasting Course
