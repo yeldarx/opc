@@ -1,8 +1,8 @@
 module.exports = {
-	title: "Open Podcasting Course",
-	url: "https://podcasting.center/",
+	title: "Open Podcasting сourse",
+	url: "/",
 	language: "en",
-	description: "The Open Podcasting Course description",
+	description: "Empowering podcasters through solid, community-driven education",
 	author: {
 		name: "Yeldar Kudaibergenov",
 		email: "mail@yeldar.org",
